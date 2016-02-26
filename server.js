@@ -11,7 +11,7 @@ app.engine('.html', ng2engine);
 app.set('views', './dist/');
 app.set('view engine', 'html');
 
-app.use(express.static('./client/'));
+app.use(express.static('./dist/'));
 
 app.use('/', (req, res) => {
   let url = req.originalUrl || '/';
